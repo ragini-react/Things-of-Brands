@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  scrollbar-width: thin; }
+
+.assets-brands a {
+  text-decoration: none;
+  color: #0F1624; }
+
+.assets-brands button img {
+  transition: transform 600ms ease; }
+
+.assets-brands button.bg-dark-purple:hover {
+  background-color: #5928E5;
+  border-color: #5928E5;
+  color: #fff !important; }
+  .assets-brands button.bg-dark-purple:hover img {
+    transform: translateX(12px); }
+
+.assets-brands p {
+  color: #0F1624; }
+
+.assets-brands .bg-dark-purple {
+  background-color: #5928E5; }
+
+.assets-brands header div .btn-bg-light {
+  background-color: #F3F4F6; }
+
+.assets-brands .manage-brand .input-wrapper {
+  border: 2px solid #5928E5;
+  width: 400px; }
+
+.assets-brands .ready-strengthen {
+  background-color: #F7F5FF;
+  height: 580px; }
+  .assets-brands .ready-strengthen button {
+    width: max-content; }
+  @media screen and (max-width: 992px) {
+    .assets-brands .ready-strengthen .brand-identity {
+      transform: scale(0.6); } }
+  .assets-brands .ready-strengthen .brand-identity .brands-column > div {
+    aspect-ratio: 1/1;
+    height: 160px; }
+  .assets-brands .ready-strengthen .brand-identity .brands-column:nth-child(2) {
+    transform: translateY(-80px); }
+
+.assets-brands .frequently-questions .accordion .accordion-item {
+  border-radius: var(--bs-accordion-inner-border-radius) !important; }
+  .assets-brands .frequently-questions .accordion .accordion-item .accordion-button {
+    box-shadow: unset !important;
+    border-radius: var(--bs-accordion-inner-border-radius) !important; }
+    .assets-brands .frequently-questions .accordion .accordion-item .accordion-button:focus {
+      box-shadow: unset !important; }
+    .assets-brands .frequently-questions .accordion .accordion-item .accordion-button::after {
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTSAxMSAyIEwgMTEgMTEgTCAyIDExIEwgMiAxMyBMIDExIDEzIEwgMTEgMjIgTCAxMyAyMiBMIDEzIDEzIEwgMjIgMTMgTCAyMiAxMSBMIDEzIDExIEwgMTMgMiBaIj48L3BhdGg+Cjwvc3ZnPg==") !important;
+      transform: unset !important; }
+    .assets-brands .frequently-questions .accordion .accordion-item .accordion-button:not(.collapsed)::after {
+      background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBVcGxvYWRlZCB0bzogU1ZHIFJlcG8sIHd3dy5zdmdyZXBvLmNvbSwgR2VuZXJhdG9yOiBTVkcgUmVwbyBNaXhlciBUb29scyAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIGZpbGw9IiMwMDAwMDAiIHZlcnNpb249IjEuMSIgaWQ9IkNhcGFfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgDQoJIHdpZHRoPSI4MDBweCIgaGVpZ2h0PSI4MDBweCIgdmlld0JveD0iMCAwIDQ1OS4zMTMgNDU5LjMxNCINCgkgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8cGF0aCBkPSJNNDU5LjMxMywyMjkuNjQ4YzAsMjIuMjAxLTE3Ljk5Miw0MC4xOTktNDAuMjA1LDQwLjE5OUg0MC4xODFjLTExLjA5NCwwLTIxLjE0LTQuNDk4LTI4LjQxNi0xMS43NzQNCgkJQzQuNDk1LDI1MC44MDgsMCwyNDAuNzYsMCwyMjkuNjZjLTAuMDA2LTIyLjIwNCwxNy45OTItNDAuMTk5LDQwLjIwMi00MC4xOTNoMzc4LjkzNg0KCQlDNDQxLjMzMywxODkuNDcyLDQ1OS4zMDgsMjA3LjQ1Niw0NTkuMzEzLDIyOS42NDh6Ii8+DQo8L2c+DQo8L3N2Zz4=") !important; }
+
+@media screen and (max-width: 576px) {
+  .assets-brands {
+    padding: 20px; } }
+
+@media (max-width: 992px) {
+  .assets-brands .manage-brand div .union-img {
+    width: 200px;
+    height: auto; } }
+
+@media (max-width: 992px) and (max-width: 576px) {
+  .assets-brands .manage-brand div.input-wrapper {
+    margin: 0 20px !important; } }
+
+@media (max-width: 992px) {
+  .assets-brands .manage-your-brand figure img {
+    width: 200px;
+    height: auto; } }
+
+@media (max-width: 992px) {
+  .assets-brands .create-collections figure img {
+    width: 200px;
+    height: auto; } }
+
+@media (max-width: 992px) {
+  .assets-brands .create-collections figure img {
+    width: 300px;
+    height: auto; } }
+
+@media (max-width: 992px) {
+  .assets-brands .testimonials div {
+    flex-wrap: wrap; } }
+
+@media (max-width: 768px) {
+  .assets-brands footer div {
+    margin-top: 10px; } }

@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    scrollbar-width: thin;
+}
+
+$color-primary: #0F1624;
+$background-color-purple: #5928E5;
+$plus-icon: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTSAxMSAyIEwgMTEgMTEgTCAyIDExIEwgMiAxMyBMIDExIDEzIEwgMTEgMjIgTCAxMyAyMiBMIDEzIDEzIEwgMjIgMTMgTCAyMiAxMSBMIDEzIDExIEwgMTMgMiBaIj48L3BhdGg+Cjwvc3ZnPg==';
+$minus-icon: 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBVcGxvYWRlZCB0bzogU1ZHIFJlcG8sIHd3dy5zdmdyZXBvLmNvbSwgR2VuZXJhdG9yOiBTVkcgUmVwbyBNaXhlciBUb29scyAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIGZpbGw9IiMwMDAwMDAiIHZlcnNpb249IjEuMSIgaWQ9IkNhcGFfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgDQoJIHdpZHRoPSI4MDBweCIgaGVpZ2h0PSI4MDBweCIgdmlld0JveD0iMCAwIDQ1OS4zMTMgNDU5LjMxNCINCgkgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8cGF0aCBkPSJNNDU5LjMxMywyMjkuNjQ4YzAsMjIuMjAxLTE3Ljk5Miw0MC4xOTktNDAuMjA1LDQwLjE5OUg0MC4xODFjLTExLjA5NCwwLTIxLjE0LTQuNDk4LTI4LjQxNi0xMS43NzQNCgkJQzQuNDk1LDI1MC44MDgsMCwyNDAuNzYsMCwyMjkuNjZjLTAuMDA2LTIyLjIwNCwxNy45OTItNDAuMTk5LDQwLjIwMi00MC4xOTNoMzc4LjkzNg0KCQlDNDQxLjMzMywxODkuNDcyLDQ1OS4zMDgsMjA3LjQ1Niw0NTkuMzEzLDIyOS42NDh6Ii8+DQo8L2c+DQo8L3N2Zz4=';
+
+
+.assets-brands {
+
+    a {
+        text-decoration: none;
+        color: $color-primary;
+    }
+
+    button {
+        img {
+            transition: transform 600ms ease;
+        }
+
+        &.bg-dark-purple {
+            &:hover {
+                background-color: $background-color-purple;
+                border-color: $background-color-purple;
+                color: #fff !important;
+
+                img {
+                    transform: translateX(12px);
+                }
+
+            }
+        }
+    }
+
+
+    p {
+        color: $color-primary;
+    }
+
+
+    .bg-dark-purple {
+        background-color: $background-color-purple;
+    }
+
+
+    header {
+        div {
+            .btn-bg-light {
+                background-color: #F3F4F6;
+            }
+        }
+    }
+
+    .manage-brand {
+        .input-wrapper {
+            border: 2px solid $background-color-purple;
+            width: 400px;
+        }
+    }
+
+
+    .ready-strengthen {
+        background-color: #F7F5FF;
+        height: 580px;
+
+        button {
+            width: max-content;
+        }
+
+        .brand-identity {
+            @media screen and (max-width: 992px) {
+                transform: scale(0.6);
+
+            }
+
+            .brands-column {
+                $card-height: 160px;
+
+
+                >div {
+                    aspect-ratio: 1/1;
+                    height: $card-height;
+                }
+
+                &:nth-child(2) {
+                    transform: translateY(-$card-height/2);
+                }
+            }
+        }
+    }
+
+
+    .frequently-questions {
+        .accordion {
+            .accordion-item {
+                border-radius: var(--bs-accordion-inner-border-radius) !important;
+
+                .accordion-button {
+                    box-shadow: unset !important;
+                    border-radius: var(--bs-accordion-inner-border-radius) !important;
+
+
+                    &:focus {
+                        box-shadow: unset !important;
+                    }
+
+                    &::after {
+                        background-image: url($plus-icon) !important;
+                        transform: unset !important;
+                    }
+
+                    &:not(.collapsed) {
+                        &::after {
+                            background-image: url($minus-icon) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+        padding: 20px;
+    }
+
+    @media (max-width: 992px) {
+        .manage-brand {
+            div {
+                .union-img {
+                    width: 200px;
+                    height: auto;
+                }
+            }
+
+        }
+
+        @media (max-width: 576px) {
+            .manage-brand {
+                div {
+                    &.input-wrapper {
+                        margin: 0 20px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width:992px) {
+        .manage-your-brand {
+            figure {
+                img {
+                    width: 200px;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    @media (max-width:992px) {
+        .create-collections {
+            figure {
+                img {
+                    width: 200px;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    @media (max-width:992px) {
+        .create-collections {
+            figure {
+                img {
+                    width: 300px;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    @media (max-width:992px) {
+        .testimonials {
+            div {
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+
+    @media (max-width:768px) {
+        footer {
+            div {
+                margin-top: 10px;
+            }
+        }
+    }
+}
